@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hubungi Kami</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <!-- Font Awesome untuk icon WhatsApp -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #8b8181, #c1baba);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .container {
+      background: rgba(255, 255, 255, 0.15);
+      backdrop-filter: blur(10px);
+      border-radius: 15px;
+      padding: 40px 30px;
+      text-align: center;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+      max-width: 400px;
+      width: 90%;
+    }
+
+    h1 {
+      color: #fff;
+      font-size: 2rem;
+      margin-bottom: 15px;
+    }
+
+    p {
+      color: #f1f1f1;
+      font-size: 1rem;
+      margin-bottom: 25px;
+    }
+
+    .btn {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start; /* Biar icon di kiri */
+      gap: 15px;
+      background: #25d566;
+      color: white;
+      font-size: 1.1rem;
+      font-weight: 600;
+      padding: 12px 20px;
+      border-radius: 20px;
+      margin: 10px 0;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+
+    .btn span {
+      flex: 1;
+      text-align: center; /* Nama admin tetap rata tengah */
+    }
+
+    .btn i {
+      font-size: 1.3rem;
+    }
+
+    .btn:hover {
+      background: #1ebf56;
+      transform: translateY(-3px);
+      box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+    }
+
+    /* Tombol Daftar khusus: Hijau terang, responsif */
+    .btn-daftar {
+      display: block;  /* Full width untuk tombol daftar */
+      background: #1f51ff;  /* Hijau terang */
+      color: white;
+      font-size: 1.1rem;
+      font-weight: 600;
+      padding: 12px 20px;
+      border-radius: 20px;
+      margin: 20px 0 0 0;  /* Margin atas lebih besar untuk spacing */
+      text-decoration: none;
+      text-align: center;
+      transition: all 0.3s ease;
+    }
+
+    .btn-daftar:hover {
+      background: #00008b;  /* Hijau lebih gelap saat hover */
+      transform: translateY(-3px);
+      box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+    }
+
+    @media (max-width: 500px) {
+      h1 {
+        font-size: 1.6rem;
+      }
+      p {
+        font-size: 0.9rem;
+      }
+      .btn, .btn-daftar {
+        font-size: 1rem;
+        padding: 10px 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Hubungi Kami</h1>
+    <p>Pilih salah satu kontak WhatsApp di bawah ini untuk Join bimbel atau tanya-tanya tentang bimbel.</p>
+
+    <!-- Ganti link WhatsApp dengan nomor admin masing-masing -->
+    <a href="https://wa.me/6287773718062" class="btn" target="_blank">
+      <i class="fab fa-whatsapp"></i> <span>- Farhezi -</span>
+    </a>
+    <a href="https://wa.me/6282128400899" class="btn" target="_blank">
+      <i class="fab fa-whatsapp"></i> <span>- Erlangga -</span>
+    </a>
+    <a href="https://wa.me/6283820700932" class="btn" target="_blank">
+      <i class="fab fa-whatsapp"></i> <span>- Davin -</span>
+    </a>
+    <a href="https://wa.me/6283180077331" class="btn" target="_blank">
+      <i class="fab fa-whatsapp"></i> <span>- Rifki -</span>
+    </a>
+
+    <!-- Tombol Daftar -->
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSfBD_yWKSe-uOmf9Hvlv5wP5GAK-EQD0cF-Xoxy72QmyqWZLA/viewform?usp=publish-editor" class="btn-daftar" target="_blank">
+      Daftar Bimbel Sekarang
+    </a>
+  </div>
+
+</body>
+</html>

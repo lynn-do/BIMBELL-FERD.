@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sign In - Bimbel Pintar</title>
+  <link rel="stylesheet" href="sign in.css" />  <!-- Pastikan file CSS Anda ada -->
+  <!-- Tambah Font Awesome untuk ikon logo -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <style>
+    /* Background gradien biru tua ke hitam */
+    body {
+      background: linear-gradient(to bottom, #00008B 0%, #000000 100%);
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      color: white;  /* Agar teks terlihat di background gelap */
+    }
+    /* Tambahan styling untuk ajakan bimbel */
+    .bimbel-cta {
+      text-align: center;
+      margin-bottom: 20px;
+      padding: 20px;
+      background-color: rgba(240, 248, 255, 0.9);  /* Semi-transparan agar kontras dengan background */
+      border-radius: 8px;
+      color: black;  /* Teks hitam untuk kontras */
+    }
+    .bimbel-cta h1 { color: #4CAF50; }
+    .bimbel-cta p { font-size: 16px; }
+    .btn-bimbel {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 5px;
+      display: inline-block;
+      margin-top: 10px;
+    }
+    .btn-bimbel:hover { background-color: #45a049; }
+    /* Styling untuk form-box agar kontras */
+    .form-box {
+      background-color: rgba(255, 255, 255, 0.95);  /* Semi-transparan putih */
+      padding: 20px;
+      border-radius: 8px;
+      color: black;  /* Teks hitam di dalam form */
+    }
+  </style>
+</head>
+<body>
+    <div class="form-box">
+      <h2>Sign In</h2>
+      <form id="loginForm">
+        <!-- Email -->
+        <div class="input-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="Masukkan email" required />
+        </div>
+
+        <!-- Password -->
+        <div class="input-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" placeholder="Masukkan password" required />
+        </div>
+
+        <!-- Remember + Forgot -->
+        <div class="options">
+          <label>
+            <input type="checkbox" id="remember" /> Ingatkan saya
+          </label>
+          <a href="#">Lupa password?</a>
+        </div>
+
+        <!-- Button -->
+        <button type="submit" class="btn">Masuk</button>
+      </form>
+
+      <!-- Divider -->
+      <div class="divider">
+        <span>atau</span>
+      </div>
+
+      <!-- Social Buttons -->
+      <div class="social-login">
+        <button class="google">
+          <i class="fab fa-google"></i>  <!-- Ikon Font Awesome untuk Google -->
+          Google
+        </button>
+        <button class="facebook">
+          <i class="fab fa-facebook-f"></i>  <!-- Ikon Font Awesome untuk Facebook -->
+          Facebook
+        </button>
+      </div>
+
+      <p class="signup">
+        Belum punya akun? <a href="https://docs.google.com/forms/d/e/1FAIpQLSfBD_yWKSe-uOmf9Hvlv5wP5GAK-EQD0cF-Xoxy72QmyqWZLA/viewform?usp=publish-editor" target="_blank">Daftar</a>
+      </p>
+    </div>
+  </div>
+  <script src="sign in.js"></script>  <!-- Pastikan file JS Anda ada -->
+</body>
+</html>
